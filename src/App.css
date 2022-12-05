@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-lightgray{
+  background-color: lightgray;
+}
+
+.image2{
+  width: 35px;
+}
+.header{
+  border-bottom: 5px solid #000;
+}
+
+@media (min-width: 1400px){
+  .containers{
+    max-width: 1640px !important;
+  }
+
+}
+.social-media{
+  margin-left: 20px;
+}
+.icon{
+  text-decoration: none;
+  color: #000;
+}
+.space-between{
+  justify-content: space-between;
+}
+.item-center{
+  align-items: center;
+}

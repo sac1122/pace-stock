@@ -20,8 +20,8 @@ function Employee(props) {
      
 
   return (
-    <div className="">
-        <div className="border-b">
+    <div className="mb-5">
+        <div className="border-b ">
             <div className="">
                 <h1 className="mt-5 mb-5">Featured Articles</h1>
 
@@ -30,27 +30,39 @@ function Employee(props) {
             <div className="row mt-3">
             {Articles && Articles.length > 0 && Articles.map((article, index) => (
 
-            <div className="col-12 col-md-6 col-lg-6 "> 
-                { index == 0 && <div >
-                        <div className="cards mb-5">
-                            <img className="big_image" src={article.urlToImage}></img>
+            <> 
+                { index == 0 && <div className="col-12 col-md-6 col-lg-6 ">
+                        <div className=" mb-5">
+                            <img className="big-image" src={article.urlToImage}></img>
                             <p className="mt-3">{article.publishedAt}</p>
                             <h3 className="title">{article.title}</h3>
                             <p>{article.content}</p>
                         </div>
                     </div>}
 
-                {index > 0 && <div className="col-12 col-md-6 col-lg-6 "><div >
-                    <div className="cards mb-5">
-                        <img className="small-image" src={article.urlToImage}></img>
-                        <p className="mt-3">{article.publishedAt}</p>
-                        <h3 className="title">{article.title}</h3>
-                        <p>{article.content}</p>
-                    </div>
-                </div></div>
-                }
-            </div>
+            </>
             ))}
+            <div className="col-12 col-md-5 offset-md-1">
+            {Articles && Articles.length > 0 && Articles.map((article, index) => (
+
+            <> 
+            {index > 0 && <div >
+                                <div className=" mb5 flex ">
+                                    <img className="small-image mr-3" src={article.urlToImage}></img>
+                                    <div className="ml-3">
+                                        <p className="">{article.publishedAt}</p>
+                                        <h5 className="sm-title">{article.title}</h5>
+                                    </div>
+                                    
+                                </div>
+                                <hr className="mb5" />
+                                </div>
+                            }
+
+            </>
+            ))}</div>
+
+            
             
         </div>
         </div>

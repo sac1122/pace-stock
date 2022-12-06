@@ -14,19 +14,19 @@ function Header(props) {
     <div class="collapse navbar-collapse space-between" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">BookMarked</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#">Learn</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link ">Blog</a>
         </li>
       </ul>
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto social">
         <li><a href="#" class="fa fa-facebook icon"></a></li>
         <li><a href="#" class="fa fa-twitter social-media icon"></a></li>
         <li><a href="#" class="fa fa-youtube social-media icon"></a></li>

@@ -122,7 +122,7 @@ export default function (props) {
           </div>
           <div className="d-grid gap-2 mt-3">
             <button  className="btn3 hvr-grow " onClick={SignInWithFirebase} >
-            <i  class="fa fa-google icon2 mt-1"></i> Sign in with Google <i className="fa fa-arrow-right mt-2 arrow right"></i>
+            <i  class="fa fa-google icon2 mt-1"></i><a>Sign in with Google </a> <i className="fa fa-arrow-right mt-2 arrow right"></i>
             </button>
             <button  className="btn3 hvr-grow " >
             <a href="#" class="fa fa-github icon2 mt-1"></a> Sign in with Github <i className="fa fa-arrow-right mt-2 arrow right"></i></button>

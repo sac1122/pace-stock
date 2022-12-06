@@ -33,7 +33,7 @@ function Employee(props) {
             <> 
                 { index == 0 && <div className="col-12 col-md-6 col-lg-6 ">
                         <div className=" mb-5">
-                            <img className="big-image" src={article.urlToImage}></img>
+                            <img className="big-image hvr-grow" loading="lazy" src={article.urlToImage}></img>
                             <p className="mt-3">{article.publishedAt}</p>
                             <h3 className="title">{article.title}</h3>
                             <p>{article.content}</p>
@@ -48,7 +48,7 @@ function Employee(props) {
             <> 
             {index > 0 && <div >
                                 <div className=" mb5 flex ">
-                                    <img className="small-image mr-3" src={article.urlToImage}></img>
+                                    <img className="small-image mr-3 hvr-grow" loading="lazy" src={article.urlToImage}></img>
                                     <div className="ml-3">
                                         <p className="">{article.publishedAt}</p>
                                         <h5 className="sm-title">{article.title}</h5>

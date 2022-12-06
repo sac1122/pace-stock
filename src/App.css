@@ -133,7 +133,15 @@ display: -webkit-box;
   .hidden{
     overflow-x: hidden;
   }
+  .Auth-form {
+    width: 350px !important;
   
+}
+
+.Auth-form-container {
+  
+  height: 140vh !important;
+}
 }
 
 
@@ -190,7 +198,7 @@ display: -webkit-box;
   box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
   padding-top: 30px;
   padding-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: white;
 }
 
@@ -201,7 +209,7 @@ display: -webkit-box;
 
 .Auth-form-title {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   font-size: 24px;
   color: #7339ae;
   font-weight: 800;
@@ -275,4 +283,33 @@ label {
  
 .img3{
   width: 200px;
+  border-radius: 20px;
+}
+
+.alert-popup{
+  background-color: red;
+  font-weight: 600;
+  color: white;
+  top: 4%;
+  position: absolute;
+  right: 1.5%;
+  padding: 1rem;
+}
+.alert-popup a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.hvr-grow {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }

@@ -32,7 +32,7 @@ function Employee(props) {
             {Articles && Articles.length > 0 && Articles.map((article, index) => (
                 <div className="col-12 col-md-6 col-lg-4 border-u">
                     <div className="cards mb-5">
-                        <img className="image" src={article.urlToImage}></img>
+                        <img className="image hvr-grow" loading="lazy" src={article.urlToImage}></img>
                         <p className="mt-3">{article.publishedAt}</p>
                         <h3 className="title">{article.title}</h3>
                         <p>{article.content}</p>
